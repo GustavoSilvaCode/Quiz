@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.progresso{
+    position: fixed;
+    height: 6px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.barraProgresso{
+    background-color:rgb(238, 255, 0) ;
+    height: 100%;
+    transition: all ease .5s;
+}
+.questaoArea,
+.pontuacaoArea {
+    display: none;
+}
+
+.questaoArea {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.questao {
+    color: #FFF;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.opcao {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: #AAA;
+    font-size: 20px;
+    cursor: pointer;
+}
+.opcao span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #555;
+}
+.opcao:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pontuacaoArea {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.prizeImage {
+    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.pontuacaoText1 {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pontuacaoPct {
+    color: #0d630d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pontuacaoText2 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.pontuacaoArea button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.pontuacaoArea button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration:underline;
+    font-style: italic;
+}
